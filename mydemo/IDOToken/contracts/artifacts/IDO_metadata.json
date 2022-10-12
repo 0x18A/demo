@@ -1,0 +1,310 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "DOIDO",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "doHarvestcoffee",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "doHarvestusdt",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "coffee",
+				"outputs": [
+					{
+						"internalType": "contract ICoffee",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "doIDO",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "harvestCoffee",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "harvestUSDT",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "contract ICoffee",
+						"name": "_coffee",
+						"type": "address"
+					},
+					{
+						"internalType": "contract IERC20",
+						"name": "_usdt",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_developTeam",
+						"type": "address"
+					}
+				],
+				"name": "initialize",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "pending",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "userTotalIDO",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "userTotalReward",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "userTotalPromote",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "userTotalPromoteAndIDO",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "userUSDTReward",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					}
+				],
+				"name": "pendingUser",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "userTotalIDO",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "userTotalReward",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "userTotalPromote",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "userTotalPromoteAndIDO",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "userUSDTReward",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct IDO.PENDING",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "contract ICoffee",
+						"name": "_coffee",
+						"type": "address"
+					}
+				],
+				"name": "updatecoffee",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_developTeam",
+						"type": "address"
+					}
+				],
+				"name": "updatedevelopTeam",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_idoRewardRatio",
+						"type": "uint256"
+					}
+				],
+				"name": "updateidoRewardRatio",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "contract IERC20",
+						"name": "_usdt",
+						"type": "address"
+					}
+				],
+				"name": "updateusdt",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "usdt",
+				"outputs": [
+					{
+						"internalType": "contract IERC20",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/IDO.sol": "IDO"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/IDO.sol": {
+			"keccak256": "0xa3332d5aa0856783180edd33a01bab1295e216667541047dcd730552e7e318c6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://896e5cbffaa2e87fd7f3f339f49bd59292be7e5be519c96ea3dfeb7bffda0002",
+				"dweb:/ipfs/QmWU4Dq2LSbxt6QZf4yi3GNwCGvVQhXJW5GFm8nmMgFxHQ"
+			]
+		}
+	},
+	"version": 1
+}
